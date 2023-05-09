@@ -1,0 +1,27 @@
+<div class="search-container">
+    <div class="row">
+      <div class="search-hero">
+        <input class="form-control" type="text" name="search" [(ngModel)]="searchText" (ngModelChange)="onChange($event)"autocomplete="off" placeholder="&#61442;  Start searching for a employee by skill or name or country">
+      </div>
+     
+      <table>
+        <thead>
+        <tr>
+          <th>Emp Id</th>
+          <th>Employee Name</th>
+          <th>Country</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{employee.id}}</td>
+          <td>{{employee.name}}</td>
+          <td>{{employee.country}}</td>
+          <td><button>View</button></td>
+        </tr>
+        </tbody>
+      </table>
+      
+    </div>
+    <div class="no-result"> <span *ngIf="employees.length === 0">No Result Found</span></div>
+</div>
