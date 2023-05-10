@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchSkillComponent } from './search-skill/search-skill.component';
-import { SearchComponent } from './search/search.component';
+// import { SearchComponent } from './search/search.component';
 import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -14,7 +14,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     UserRegistrationComponent,
-    HeaderComponent
+    HeaderComponent,
+    // SearchComponent,
   ],
   imports: [
     BrowserModule,

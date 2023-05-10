@@ -12,7 +12,6 @@ export class UserRegistrationComponent {
   userForm: FormGroup;
   constructor() {
     this.userForm = new FormGroup({
-      UserFirstName: new FormControl(),
       UserLastName: new FormControl(),
     });
   }
