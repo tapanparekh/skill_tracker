@@ -9,8 +9,9 @@
     justify-content: space-between;
     margin: 22px 0 22px 0;
     .log {
-      width: 20px;
-      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -22,8 +23,8 @@
       margin: 0 8px 0 8px;
       font-size: 20px;
       cursor: pointer;
-      &:hover{
-        color:white;
+      &:hover {
+        color: white;
         background-color: #cbedff;
       }
     }

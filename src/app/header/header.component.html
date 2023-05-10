@@ -1,9 +1,23 @@
 <div class="header">
     <div class="d-flex">
-        <div class="logo"><img alt="Wolters-Kluwer" src="https://cdn.wolterskluwer.io/wk/fundamentals/1.15.2/logo/assets/large.svg"></div>
+        <div class="logo" style="display: flex;align-items: center;justify-content: space-between;width: 10px"><img alt="Wolters-Kluwer" src="https://cdn.wolterskluwer.io/wk/fundamentals/1.15.2/logo/assets/large.svg"></div>
         <div class="component search-header" data-searchheader-settings-item-id="" data-database="web">
-            <span class="search-header__placeholder-text">Search Wolters Kluwer</span>
-            <!-- <button><span class="sr-only">Expand Search</span></button> -->
+            <a class="nav-link dropdown-toggle d-flex align-items-center" id="navbarDropdownMenuLink"
+            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp" class="rounded-circle"
+              height="22" alt="Avatar" loading="lazy" />
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="#">My profile</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Settings</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Logout</a>
+            </li>
+          </ul>
             </div>
     </div>
     <div><ul><li class="dashboard-link" [routerLink]="'/dashboard/manager'">Dashboard</li></ul></div>
