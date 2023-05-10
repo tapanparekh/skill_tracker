@@ -10,19 +10,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    UserRegistrationComponent,
-    HeaderComponent
-  ],
+  declarations: [AppComponent, UserRegistrationComponent, HeaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgSelectModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
