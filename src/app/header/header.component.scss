@@ -21,6 +21,11 @@
     li {
       margin: 0 8px 0 8px;
       font-size: 20px;
+      cursor: pointer;
+      &:hover{
+        color:white;
+        background-color: #cbedff;
+      }
     }
   }
 }
