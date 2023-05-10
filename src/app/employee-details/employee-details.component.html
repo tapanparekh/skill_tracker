@@ -1,0 +1,34 @@
+<section class="section-1">
+    <span style="font-weight: 500;">Name: </span><span> {{employeeDetails.name}}</span><br>
+    <span style="font-weight: 500;">Designation:</span><span> {{employeeDetails.designation}}</span><br>
+    <span style="font-weight: 500;">Total Experience:</span><span> {{employeeDetails.totalExperience}}</span>
+    <section class="section-2">
+     <div>
+        Tech stack
+        <ul >
+            <li *ngFor="let stack of employeeDetails.skills">
+            {{ stack}}
+        </li>
+    </ul>
+     </div>
+     <div>
+        WK Domain Feature skills
+        <ul>
+            <li *ngFor="let stack of employeeDetails.wkDomainFeatureSkills">
+             {{stack}}
+        </li>
+    </ul>
+     </div>
+     <div>
+       WK Experience Domain 
+        <ul>
+            <li *ngFor="let stack of employeeDetails.wkExperienceDomain">
+             {{stack}}
+        </li>
+    </ul>
+    </div>
+    
+    </section>
+    <button (click)="onSubmit()">Request Resource</button>
+    <span *ngIf="isRequestSent">Request sent successful!</span>
+</section>
