@@ -18,4 +18,9 @@ export class LoginComponent {
     const navigationDetails: string[] = ['/user'];
     this.router.navigate(navigationDetails);
   };
+
+  loginManager = () => {
+    const navigationDetails: string[] = ['/dashboard/manager'];
+    this.router.navigate(navigationDetails);
+  };
 }

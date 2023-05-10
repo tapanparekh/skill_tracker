@@ -10,6 +10,7 @@
           <th>Emp Id</th>
           <th>Employee Name</th>
           <th>Country</th>
+          <th>Skills</th>
         </tr>
         </thead>
         <tbody>
@@ -17,7 +18,8 @@
           <td>{{employee.id}}</td>
           <td>{{employee.name}}</td>
           <td>{{employee.country}}</td>
-          <td><button>View</button></td>
+          <td>{{employee.skills.join(',')}}</td>
+          <td><button (click)="onView(employee.id)">View</button></td>
         </tr>
         </tbody>
       </table>

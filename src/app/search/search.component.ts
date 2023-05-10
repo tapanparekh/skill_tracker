@@ -1,16 +1,17 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { employeesData } from '../db/employee';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss'],
 })
-export class SearchComponent implements OnInit {
+export class SearchComponent {
+  constructor(private route: Router) {}
   @Input() searchBase = 'skills';
   public searchText: any = '';
   public employees: any[] = employeesData;
-  public ngOnInit(): void {}
 
   public onChange($event: string) {
     if (!$event) {
@@ -26,5 +27,9 @@ export class SearchComponent implements OnInit {
         return employee[this.searchBase].toLowerCase() === $event.toLowerCase();
       }
     });
+  }
+
+  public onView(id: number) {
+    this.route.navigateByUrl('employee-details/' + id);
   }
 }
