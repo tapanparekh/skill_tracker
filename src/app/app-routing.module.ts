@@ -30,6 +30,34 @@ const routes: Routes = [
         (m) => m.DashboardRoutingModule
       ),
   },
+  {
+    path: 'user-registration',
+    loadChildren: () =>
+      import(
+        './components/user-registration/user-registration-routing.module'
+      ).then((m) => m.UserRegistrationRoutingModule),
+  },
+  {
+    path: 'login',
+    loadChildren: () =>
+      import('./components/login/login-routing.module').then(
+        (m) => m.LoginRoutingModule
+      ),
+  },
+  {
+    path: 'user',
+    loadChildren: () =>
+      import('./components/user/user-routing.module').then(
+        (m) => m.UserRoutingModule
+      ),
+  },
+  {
+    path: 'edit-profile',
+    loadChildren: () =>
+      import('./components/edit-profile/edit-profile-routing.module').then(
+        (m) => m.EditProfileRoutingModule
+      ),
+  },
 ];
 
 @NgModule({
