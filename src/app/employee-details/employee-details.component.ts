@@ -13,6 +13,7 @@ export class EmployeeDetailsComponent implements OnInit {
   public employeeDetails: any = {};
   public isManager = false;
   isRequestSent = false;
+  sendButtonValue = '';
   constructor(
     private route: ActivatedRoute,
     private commonService: CommonService
@@ -27,6 +28,7 @@ export class EmployeeDetailsComponent implements OnInit {
       })[0];
     });
     this.isManager = this.commonService.isManager;
+    this.sendButtonValue = this.isManager ? 'Request Resource' : 'Send';
   }
 
   onSubmit() {

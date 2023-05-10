@@ -4,6 +4,7 @@
     <span style="font-weight: 500;">Total Experience:</span><span> {{employeeDetails.totalExperience}}</span><br>
     <span style="font-weight: 500;">Related Domain:</span><span> {{employeeDetails.relatedDomain}}</span><br>
     <span style="font-weight: 500;">Job Title:</span><span> {{employeeDetails.jobTitle}}</span><br>
+    <span style="font-weight: 500;">Reporting Manager:</span><span> {{employeeDetails.reportingManager}}</span><br>
     <section class="section-2">
      <div>
         Tech stack
@@ -22,7 +23,7 @@
     </ul>
      </div>
      <div>
-       WK Experience Domain 
+       WK Domain Experience 
         <ul>
             <li *ngFor="let stack of employeeDetails.wkExperienceDomain">
              {{stack}}
@@ -31,6 +32,10 @@
     </div>
     
     </section>
-    <button (click)="onSubmit()" *ngIf="isManager">Request Resource</button>
+    <form>
+        <textarea class="comment"> Type your comment here.</textarea>
+        <br>
+        <input type="button" name="submit" [value]="sendButtonValue" (click)="onSubmit()">
+      </form>
     <span *ngIf="isRequestSent">Request sent successful!</span>
 </section>

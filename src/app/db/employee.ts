@@ -8,10 +8,10 @@ export const employeesData = [
     totalExperience: 5,
     jobTitle: 'Mean-stack Developer',
     designation: 'Product Software Engineer',
-
     relatedDomain: 'Software Development',
     wkExperienceDomain: ['iknow', 'CCHIQ', 'Mediregs'],
     wkDomainFeatureSkills: ['Docker', 'OneId', 'gateway'],
+    reportingManager: 'Kaustubh-patwardhan',
   },
   {
     id: 27899,
@@ -31,6 +31,7 @@ export const employeesData = [
       'gateway',
       'Fusion',
     ],
+    reportingManager: 'Kaustubh-patwardhan',
   },
   {
     id: 98765,
@@ -44,6 +45,7 @@ export const employeesData = [
     relatedDomain: 'Software Development',
     wkExperienceDomain: ['Mediregs'],
     wkDomainFeatureSkills: ['Docker', 'OneId', 'gateway', 'Fusion'],
+    reportingManager: 'Kaustubh-patwardhan',
   },
   {
     id: 27865,
@@ -57,6 +59,7 @@ export const employeesData = [
     relatedDomain: 'Software Development',
     wkExperienceDomain: ['CCH IQ'],
     wkDomainFeatureSkills: ['Docker', 'OneId', 'gateway', 'Fusion'],
+    reportingManager: 'Kaustubh-patwardhan',
   },
   {
     id: 57890,
@@ -70,6 +73,7 @@ export const employeesData = [
     relatedDomain: 'Software Development',
     wkExperienceDomain: ['OneSum X'],
     wkDomainFeatureSkills: ['Docker', 'OneId', 'gateway', 'Fusion'],
+    reportingManager: 'Kaustubh-patwardhan',
   },
   {
     id: 68989,
@@ -83,6 +87,7 @@ export const employeesData = [
     relatedDomain: 'Software Development',
     wkExperienceDomain: ['OneSum X'],
     wkDomainFeatureSkills: ['Docker', 'OneId', 'gateway', 'Fusion'],
+    reportingManager: 'Kaustubh-patwardhan',
   },
   {
     id: 71233,
@@ -96,6 +101,7 @@ export const employeesData = [
     relatedDomain: 'Software Development',
     wkExperienceDomain: ['OneSum X'],
     wkDomainFeatureSkills: ['Docker', 'OneId', 'gateway', 'Fusion'],
+    reportingManager: 'Kaustubh-patwardhan',
   },
   {
     id: 89876,
@@ -109,6 +115,7 @@ export const employeesData = [
     relatedDomain: 'Software Development',
     wkExperienceDomain: ['OneSum X'],
     wkDomainFeatureSkills: ['Docker', 'OneId', 'gateway', 'Fusion'],
+    reportingManager: 'Kaustubh-patwardhan',
   },
   {
     id: 92345,
@@ -122,6 +129,7 @@ export const employeesData = [
     relatedDomain: 'Software Development',
     wkExperienceDomain: ['OneSum X'],
     wkDomainFeatureSkills: ['Docker', 'OneId', 'gateway', 'Fusion'],
+    reportingManager: 'Kaustubh-patwardhan',
   },
   {
     id: 10235,
@@ -135,6 +143,7 @@ export const employeesData = [
     relatedDomain: 'Software Development',
     wkExperienceDomain: ['OneSum X'],
     wkDomainFeatureSkills: ['Docker', 'OneId', 'gateway', 'Fusion'],
+    reportingManager: 'Kaustubh-patwardhan',
   },
   {
     id: 11098,
@@ -148,6 +157,7 @@ export const employeesData = [
     relatedDomain: 'Software Development',
     wkExperienceDomain: ['OneSum X'],
     wkDomainFeatureSkills: ['Docker', 'OneId', 'gateway', 'Fusion'],
+    reportingManager: 'Kaustubh-patwardhan',
   },
   {
     id: 12876,
@@ -161,5 +171,6 @@ export const employeesData = [
     relatedDomain: 'Software Development',
     wkExperienceDomain: ['OneSum X'],
     wkDomainFeatureSkills: ['Docker', 'OneId', 'gateway', 'Fusion'],
+    reportingManager: 'Kaustubh-patwardhan',
   },
 ];
