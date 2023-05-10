@@ -4,15 +4,8 @@ import { CommonModule } from '@angular/common';
 import { ManagerDashboardComponent } from './manager-dashboard/manager-dashboard.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 
-
-
 @NgModule({
-  declarations: [
-    ManagerDashboardComponent
-  ],
-  imports: [
-    CommonModule,
-    DashboardRoutingModule
-  ]
+  declarations: [ManagerDashboardComponent],
+  imports: [CommonModule, DashboardRoutingModule],
 })
-export class DashboardModule { }
+export class DashboardModule {}

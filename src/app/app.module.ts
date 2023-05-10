@@ -19,7 +19,7 @@ import { EditProfileComponent } from './components/edit-profile/edit-profile.com
     HeaderComponent,
     LoginComponent,
     UserComponent,
-    EditProfileComponent
+    EditProfileComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,9 @@
 <section class="section-1">
     <span style="font-weight: 500;">Name: </span><span> {{employeeDetails.name}}</span><br>
     <span style="font-weight: 500;">Designation:</span><span> {{employeeDetails.designation}}</span><br>
-    <span style="font-weight: 500;">Total Experience:</span><span> {{employeeDetails.totalExperience}}</span>
+    <span style="font-weight: 500;">Total Experience:</span><span> {{employeeDetails.totalExperience}}</span><br>
+    <span style="font-weight: 500;">Related Domain:</span><span> {{employeeDetails.relatedDomain}}</span><br>
+    <span style="font-weight: 500;">Job Title:</span><span> {{employeeDetails.jobTitle}}</span><br>
     <section class="section-2">
      <div>
         Tech stack
@@ -29,6 +31,6 @@
     </div>
     
     </section>
-    <button (click)="onSubmit()">Request Resource</button>
+    <button (click)="onSubmit()" *ngIf="isManager">Request Resource</button>
     <span *ngIf="isRequestSent">Request sent successful!</span>
 </section>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Route, Router } from '@angular/router';
 import { employeesData } from '../db/employee';
+import { CommonService } from '../common.service';
 
 @Component({
   selector: 'app-employee-details',
@@ -10,8 +11,12 @@ import { employeesData } from '../db/employee';
 export class EmployeeDetailsComponent implements OnInit {
   public id: string = '';
   public employeeDetails: any = {};
+  public isManager = false;
   isRequestSent = false;
-  constructor(private route: ActivatedRoute) {}
+  constructor(
+    private route: ActivatedRoute,
+    private commonService: CommonService
+  ) {}
   ngOnInit() {
     this.route.params.subscribe((params) => {
       this.id = params['id'];
@@ -21,6 +26,7 @@ export class EmployeeDetailsComponent implements OnInit {
         return item.id.toString() === this.id;
       })[0];
     });
+    this.isManager = this.commonService.isManager;
   }
 
   onSubmit() {
