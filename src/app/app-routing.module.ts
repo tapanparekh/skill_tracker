@@ -23,6 +23,13 @@ const routes: Routes = [
         (m) => m.EmployeeDetailsModule
       ),
   },
+  {
+    path: 'dashboard',
+    loadChildren: () =>
+      import('./dashboard/dashboard-routing.module').then(
+        (m) => m.DashboardRoutingModule
+      ),
+  },
 ];
 
 @NgModule({

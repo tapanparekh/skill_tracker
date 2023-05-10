@@ -1,0 +1,23 @@
+.dashboard-container {
+    display: flex;
+    margin-top: 10px;
+    .card {
+        margin: 10px;
+        width: 25%;
+        height: 100px;
+        background: #007ac3;
+        color: white;
+        position: relative;
+        font-size: 35px;
+        .card-title {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+        }
+        .card-detail {
+            position: absolute;
+            left: 55%;
+            top: 20%;
+        }
+    }
+}
